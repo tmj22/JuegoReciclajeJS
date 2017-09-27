@@ -1,0 +1,79 @@
+body {
+    background-image: url('img/street.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: -320px ;
+    font-family:helvetica;
+    text-shadow: black;
+    font-weight:bold;
+    text-transform: uppercase;
+}
+
+#mensaje {
+  margin-top: 30px;
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 50px;
+  opacity: 0;
+  -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    -webkit-text-stroke-width: 1px;
+   -webkit-text-stroke-color: white;
+
+}
+
+
+.contenedores {
+ margin-top: 130px;
+ margin-right: 80px;
+ float: right;
+ display: flex;
+}
+
+.contenedor {
+ width: 150px;
+ height: 150px;
+ background-repeat: no-repeat;
+ background-size: 90%;
+ -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+   filter: url(#drop-shadow);
+   -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+   filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+     font-size: 25px;
+}
+#carton {
+ background-image: url("img/carton.png");
+ -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: white;
+}
+
+#vidrio {
+ background-image: url("img/vidrio.png");
+ -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: white;
+}
+
+#plastico {
+ background-image: url("img/plastico.png");
+ -webkit-text-stroke-width: 1px;
+-webkit-text-stroke-color: white;
+}
+
+
+.objetos {
+ margin-left: 100px;
+ float: left;
+}
+
+.basura {
+  margin: 35px;
+  height: 90px;
+  width: 90px;
+  -webkit-filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.5));
+    filter: url(#drop-shadow);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+
+}

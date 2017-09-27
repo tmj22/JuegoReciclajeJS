@@ -1,0 +1,39 @@
+<html>
+<title>RECICLAJE</title>
+<head>
+  <script src="js/jquery-3.1.1.min.js" charset="utf-8"></script>
+    <script src="js/script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<svg height="0" xmlns="http://www.w3.org/2000/svg">
+    <filter id="drop-shadow">
+        <feGaussianBlur in="SourceAlpha" stdDeviation="4"/>
+        <feOffset dx="12" dy="12" result="offsetblur"/>
+        <feFlood flood-color="rgba(0,0,0,0.5)"/>
+        <feComposite in2="offsetblur" operator="in"/>
+        <feMerge>
+            <feMergeNode/>
+            <feMergeNode in="SourceGraphic"/>
+        </feMerge>
+    </filter>
+</svg>
+<body background="img/street.jpg">
+<div id="mensaje">.</div>
+
+  <div class="contenedores">
+    <div class="contenedor" id="carton" ondragover="allowDrop(event)" ondrop="drop(this,event)"><span> CARTÓN </span></div>
+    <div class="contenedor" id="plastico" ondragover="allowDrop(event)" ondrop="drop(this,event)">  <span> PLÁSTICO </span></div>
+    <div class="contenedor" id="vidrio" ondragover="allowDrop(event)" ondrop="drop(this,event)"><span> VIDRIO </span></div>
+  </div>
+
+  <div class="objetos">
+    <img class ="basura" src="img/papel.png" name="carton" draggable="true" ondragstart="drag(event)" id="drag1"/>
+    <img class ="basura" src="img/copa.png" name="vidrio" draggable="true" ondragstart="drag(event)" id="drag2"/><br>
+    <img class ="basura" src="img/bolsa.png" name="plastico" draggable="true" ondragstart="drag(event)" id="drag3"/>
+    <img class ="basura" src="img/caja.png" name="carton" draggable="true" ondragstart="drag(event)" id="drag4"/><br>
+    <img class ="basura" src="img/bote.png" name="vidrio" draggable="true" ondragstart="drag(event)" id="drag5"/>
+    <img class ="basura" src="img/botella2.png" name="plastico" draggable="true" ondragstart="drag(event)" id="drag6"/>
+ </div>
+
+</body>
+</html>
